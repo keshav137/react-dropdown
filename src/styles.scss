@@ -1,0 +1,115 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dropdown-demo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clear-cursor {
+  cursor: initial !important;
+}
+
+.focused {
+  outline: 2px solid rgb(25, 118, 210);
+}
+
+.dropdown {
+  font-family: sans-serif;
+  position: relative;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    outline: 2px solid rgb(25, 118, 210);
+  }
+
+  .clear {
+    // ToDo: fix size
+    margin-left: auto;
+    width: 15px;
+  }
+
+  .selected {
+    outline: solid 2px #eee;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > img {
+      height: 18px;
+    }
+    .options {
+      display: block;
+    }
+
+    .placeholder {
+      color: grey;
+    }
+  }
+
+  .options {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+    margin-top: 3px;
+    border: solid 1px #eee;
+    font-size: 15px;
+    border-radius: 4px;
+    max-height: 230px;
+    overflow-y: scroll;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    min-height: 30px;
+    cursor: pointer;
+    gap: 6px;
+
+    &:hover {
+      background-color: rgba(25, 118, 210, 0.12);
+    }
+    &-checkbox {
+      margin-right: 6px;
+    }
+  }
+
+  .highlighted {
+    background-color: rgba(25, 118, 210, 0.08);
+  }
+
+  .option-content {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.dropdown-label {
+  font-weight: 500;
+  font-size: 16px;
+}
