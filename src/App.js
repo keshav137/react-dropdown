@@ -9,24 +9,40 @@ const names = [
   },
   {
     id: 1,
+    label: "Van Henry",
+  },
+  {
+    id: 2,
+    label: "Hello World",
+  },
+  {
+    id: 3,
     label:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ",
   },
   {
-    id: 2,
-    label: "John Doe 1",
-  },
-  {
-    id: 3,
-    label: "John Doe 2",
-  },
-  {
     id: 4,
-    label: "John Doe 3",
+    label: "April Tucker",
   },
   {
     id: 5,
-    label: "John Doe 3",
+    label: "Ralph Hubbard",
+  },
+  {
+    id: 6,
+    label: "Test String",
+  },
+  {
+    id: 7,
+    label: "Twenty",
+  },
+  {
+    id: 8,
+    label: "Twenty one",
+  },
+  {
+    id: 9,
+    label: "Twenty one and a half",
   },
 ];
 
